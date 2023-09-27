@@ -40,12 +40,6 @@
   background-color: #fff;
 }
 
-/* @media (min-width: 830px) {
-  .header__bottom {
-    display: block;
-  }
-} */
-
 @media (min-width: 640px) {
   .header__top .header__content {
     height: 126px;
