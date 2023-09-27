@@ -1,5 +1,7 @@
 {
   "homepage": "https://ilona-borkovska.github.io/landing-page_PEJ",
+  "source": "src/index.html",
+  "type": "module",
   "dependencies": {
     "gh-pages": "^6.0.0"
   },
@@ -7,10 +9,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url:/dist/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
 }
