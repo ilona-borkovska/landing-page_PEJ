@@ -1,0 +1,144 @@
+.benefits {
+  position: relative;
+  padding-block: 50px 66px;
+  background-image: url('../../assets/images/benefits-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.benefits:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  display: block;
+  background: rgba(0, 72, 177, 0.7);
+  z-index: 1;
+}
+
+.benefits__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  justify-content: center;
+  padding-inline: 15px;
+}
+
+.benefits__title {
+  margin-block-end: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.benefits__advantages {
+  flex-basis: 50%;
+}
+
+.advice {
+  flex-basis: 100%;
+  height: max-content;
+  padding-block: 25px 35px;
+  padding-inline: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff
+}
+
+.benefits__text {
+  color: var(--color-light-grey);
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.benefits__img {
+  display: block;
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+.advice__title {
+  margin-block-end: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.advice__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-inline: 20px 10px;
+  list-style: decimal;
+}
+
+.advice__item {
+  font-size: 18px;
+}
+
+@media (min-width: 960px) {
+  .benefits__content {
+    flex-direction: row;
+    gap: 82px;
+    justify-content: center;
+    padding-inline: 42px;
+  }
+
+  .benefits__advice {
+    width: 450px;
+    padding-block: 25px 35px;
+    padding-inline: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+
+  .benefits__title {
+    margin-block-end: 50px;
+  }
+
+  .advice {
+    flex-basis: 100%;
+    padding-inline: 40px;
+  }
+
+  .advice__title {
+    font-size: 24px;
+  }
+
+  .advice__list {
+    padding-inline: 40px 20px;
+  }
+
+  .benefits__title {
+    font-size: 26px;
+  }
+}

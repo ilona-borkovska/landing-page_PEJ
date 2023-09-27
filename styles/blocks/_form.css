@@ -1,0 +1,124 @@
+.form {
+  max-width: 542px;
+  width: 100%;
+  padding-block: 45px;
+  padding-inline: 15px;
+  box-sizing: border-box;
+
+  text-align: center;
+  background-image: url('../../assets/images/form-bg2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__title {
+  position: relative;
+  width: max-content;
+  margin-block-end: 40px;
+  margin-inline: auto;
+  padding-block: 10px;
+
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.form__title::before,
+.form__title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  background: var(--color-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__title::before {
+  top: 0;
+}
+
+.form__title::after {
+  bottom: 0;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding-block: 15px 16px;
+  padding-inline: 16px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  color: var(--color-black);
+  outline: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s linear;
+}
+
+.form__input:focus {
+  border-bottom-color: var(--color-light-green);
+}
+
+.form__input::placeholder {
+  color: var(--color-grey);
+  font-size: 24px;
+}
+
+.form__input:last-child {
+  margin-bottom: 10px;
+}
+
+.form__submit-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+.form span[data-elem="error-msg"] {
+  display: block;
+  border: 1px solid;
+  margin-block-end: 10px;
+  padding: 15px 10px 15px 50px;
+
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url(../../assets/images/icons/error.webp);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 25px;
+}
+
+.form .hide[data-elem="error-msg"] {
+  opacity: 0;
+}
+
+@media (min-width: 960px) {
+  .form {
+    padding-inline: 50px;
+  }
+
+  .form__title {
+    margin-block-end: 70px;
+    padding-block: 8px;
+    line-height: 57px;
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 640px) {
+  .form {
+    padding-block: 56px 74px;
+    padding-inline: 25px;
+  }
+}
