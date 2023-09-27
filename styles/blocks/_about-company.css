@@ -50,10 +50,13 @@
 }
 
 .about-company__register-btn {
-  width: 444px;
+  display: block;
+  max-width: 444px;
+  width: 100%;
   height: 60px;
   margin-inline: auto;
   margin-block-end: 36px;
+  text-align: center;
 }
 
 .about-company__bottom {
