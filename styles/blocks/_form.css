@@ -2,11 +2,11 @@
   max-width: 542px;
   width: 100%;
   padding-block: 45px;
-  padding-inline: 15px;
+  padding-inline: 35px;
   box-sizing: border-box;
 
   text-align: center;
-  background-image: url('../../assets/images/form-bg2.webp');
+  background-image: url('../../assets/images/rectangle.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
